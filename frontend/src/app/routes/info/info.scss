@@ -1,0 +1,39 @@
+h1 {
+  font-weight: 1000;
+}
+h2 {
+  font-size: 1.3rem;
+}
+.description {
+  width: auto;
+  max-width: 50%;
+  background: var(--color-primary);
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 12px;
+  border: 10px solid var(--color-border);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  .highlight {
+    color: var(--color-highlight);
+    &.weighted {
+      font-weight: 900;
+    }
+    .lowlight {
+      position: absolute;
+      transform: translateY(-1.3rem);
+      color: var(--color-secondary);
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.blankspace {
+  height: 1rem;
+  color: var(--color-bg);
+  user-select: none;
+}

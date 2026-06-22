@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './info.scss',
 })
 export class Info {
-
+  about =
+    'mapjam.net is an open-source platform for hosting MapJam maps and efficiently managing community voting.';
+  host = 'To apply for an admin account, you first must meet certain qualifications.';
 }

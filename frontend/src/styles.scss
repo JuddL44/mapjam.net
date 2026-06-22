@@ -6,6 +6,7 @@
   --color-secondary: #895737;
   --color-tertiary: green;
   --color-border: #dab49d;
+  --color-highlight: #f3e9dc;
 }
 .dark-theme {
   --color-bg: #000000;
@@ -14,6 +15,7 @@
   --color-secondary: #684665;
   --color-tertiary: yellow;
   --color-border: #2f2f2f;
+  --color-highlight: yellow;
 }
 
 /* Base */
@@ -46,6 +48,30 @@ body {
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 8rem;
+}
+
+.divider-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background: var(--color-border);
+}
+
+.divider-title {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background: var(--color-bg);
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  color: var(--color-text);
+  font-family: inherit;
+  font-weight: 800;
 }
 
 button {
@@ -119,7 +145,7 @@ button:after {
       border-radius: 12px;
       font-family: inherit;
       font-size: 0.9rem;
-      color: var(--color-bg);
+      color: var(--color-highlight);
       display: flex;
       align-items: center;
       justify-content: center;
