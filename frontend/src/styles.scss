@@ -4,13 +4,15 @@
   --color-text: #5e3023;
   --color-primary: #c08552;
   --color-secondary: #895737;
+  --color-tertiary: green;
   --color-border: #dab49d;
 }
 .dark-theme {
   --color-bg: #000000;
-  --color-text: #0a81d1;
+  --color-text: #ffffff;
   --color-primary: #4d364e;
   --color-secondary: #684665;
+  --color-tertiary: yellow;
   --color-border: #2f2f2f;
 }
 
@@ -21,6 +23,8 @@ body {
   height: 100%;
   margin: 0;
   background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Inter, system-ui, sans-serif;
 }
 .main {
   width: 100%;
@@ -31,4 +35,11 @@ body {
   align-content: start;
   justify-content: flex-start;
   text-align: start;
+}
+
+button {
+  color: var(--color-text);
+}
+button:after {
+  background-color: var(--color-tertiary);
 }
