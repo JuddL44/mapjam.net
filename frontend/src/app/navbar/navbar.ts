@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
-export class Navbar {}
+export class Navbar {
+  private dark = false;
+
+  toggleTheme() {
+    this.dark = !this.dark;
+    document.documentElement.classList.toggle('dark-theme', this.dark);
+  }
+}

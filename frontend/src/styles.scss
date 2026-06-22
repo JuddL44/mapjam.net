@@ -1,3 +1,27 @@
+/* Color Themes */
+:root {
+  --color-bg: #f3e9dc;
+  --color-text: #5e3023;
+  --color-primary: #c08552;
+  --color-secondary: #895737;
+  --color-border: #dab49d;
+}
+.dark-theme {
+  --color-bg: #000000;
+  --color-text: #0a81d1;
+  --color-primary: #4d364e;
+  --color-secondary: #684665;
+  --color-border: #2f2f2f;
+}
+
+/* Base */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-bg);
+}
 .main {
   width: 100%;
   height: 100%;
