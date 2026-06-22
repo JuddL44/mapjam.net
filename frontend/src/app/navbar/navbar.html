@@ -1,14 +1,13 @@
 <header class="topbar">
-  <button class="logo">mapjam.net</button>
+  <button class="logo" routerLink="/">mapjam.net</button>
 
   <nav class="nav">
-    <button href="#">Home</button>
-    <button href="#">MapJams</button>
-    <button href="#">Info</button>
+    <button routerLink="/">Home</button>
+    <button routerLink="/MapJams">MapJams</button>
+    <button routerLink="/Info">Info</button>
   </nav>
 
   <div class="actions">
-    <button>Button</button>
     <button (click)="toggleTheme()">Color</button>
   </div>
 </header>
