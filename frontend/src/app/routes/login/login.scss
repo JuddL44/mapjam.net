@@ -1,0 +1,72 @@
+.primary-container {
+  width: 88rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.splash {
+  width: 66rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(-1rem);
+  }
+}
+
+.login-box {
+  width: 22rem;
+  height: auto;
+  background: var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem;
+  .input {
+    background: none;
+    outline: none;
+    width: 80%;
+    height: 2rem;
+    border: none;
+    color: white;
+    font-style: inherit;
+    font-weight: 200;
+    font-size: 1.4rem;
+  }
+  .divider {
+    margin-bottom: 3rem;
+    background: var(--color-text);
+    &.nomargin {
+      margin-bottom: 0rem;
+    }
+  }
+  .divider-title {
+    background: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 2rem;
+    left: -0.5rem;
+  }
+  .options-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 10%;
+  }
+  .button-container {
+    width: 40%;
+    font-weight: 450;
+    height: 3rem;
+    font-size: 1.4rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  .button-container:hover {
+    background: var(--color-highlight);
+  }
+}

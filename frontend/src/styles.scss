@@ -6,7 +6,7 @@
   --color-secondary: #895737;
   --color-tertiary: green;
   --color-border: #dab49d;
-  --color-highlight: #f3e9dc;
+  --color-highlight: #fcd7ad;
 }
 .dark-theme {
   --color-bg: #000000;
@@ -72,6 +72,28 @@ body {
   color: var(--color-text);
   font-family: inherit;
   font-weight: 800;
+}
+.button-container {
+  width: 30%;
+  height: 5rem;
+  background: var(--color-primary);
+  color: var(--color-text);
+  font-style: inherit;
+  font-weight: 800;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.button-container:hover {
+  cursor: pointer;
+  height: 5.5rem;
+  font-weight: 850;
+  background: var(--color-secondary);
 }
 
 button {
