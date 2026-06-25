@@ -30,7 +30,7 @@ body {
 }
 .main {
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   height: 100%;
   display: flex;
@@ -39,6 +39,9 @@ body {
   align-content: start;
   justify-content: flex-start;
   text-align: start;
+  &.centered {
+    justify-content: center;
+  }
 }
 .container {
   width: 100%;
